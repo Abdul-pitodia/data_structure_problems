@@ -23,15 +23,17 @@ class Solution:
         a = nums
         n = len(nums)
         
+        # iterate from 0 to n
+        
         for i in range(n):
             
-            correct_pos = a[i] - 1
+            correct_pos = a[i] - 1  #calculate the correct position for current element
             
-            while (1 <= a[i] <= n and a[correct_pos] != a[i] ):
-                a[i],a[correct_pos] = a[correct_pos],a[i]
-                correct_pos = a[i] - 1
+            while (1 <= a[i] <= n and a[correct_pos] != a[i] ):  # check if current element lies in range , and if yes also check if it is not placed at the correct position
+                a[i],a[correct_pos] = a[correct_pos],a[i]        # if it is not present at its correct position, swap the number with the number present at the correct position
+                correct_pos = a[i] - 1                           # it may happen that new swapped number will lie in range and not in correct position. hence we use a while loop
+                                                                 # so we calculate correct pos for new element again and do swapping again.
         
-        print(a)
         for i in range(n):
             if (a[i] != i+1):
                 return i+1
