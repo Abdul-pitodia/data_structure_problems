@@ -41,3 +41,8 @@ class Solution:
 
 
 ```
+
+
+
+https://www.geeksforgeeks.org/find-the-smallest-positive-number-missing-from-an-unsorted-array-set-3/?ref=rp
+https://www.youtube.com/watch?v=-lfHWWMmXXM
