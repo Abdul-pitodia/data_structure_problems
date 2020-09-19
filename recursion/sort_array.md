@@ -1,12 +1,12 @@
 #recursion sort
 
-# [3,2,1] -- [1,2,3]
-# [3,2] -- [2,3] - insert 1
-# [3] - 1 
-# [3] - 1
-# [] - 1
-# [1]
-# insert 1 if arr empty, else if 1 > last element
+ [3,2,1] -- [1,2,3]
+ [3,2] -- [2,3] - insert 1
+ [3] - 1 
+ [3] - 1
+ [] - 1
+ [1]
+ insert 1 if arr empty, else if 1 > last element
 
 #################################################
 ```
