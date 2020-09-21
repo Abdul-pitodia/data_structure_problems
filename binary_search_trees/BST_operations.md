@@ -1,6 +1,18 @@
 # Binary Search Tree basic operations- 
 ## Insert , Delete , Search, Inorder, Minimum Node traversal
 
+```
+  17
+ / \
+ 8  34
+/\
+2 9
+/\
+1 4
+  \
+   6
+```
+
 Code-
 
 ```
@@ -110,20 +122,6 @@ def delete(node,el):
 
   return root
 
-
-  
-```
-  17
- / \
- 8  34
-/\
-2 9
-/\
-1 4
-  \
-   6
-```
-    
 
 ele = [17,8,2,34,1,4,6,9]
 node = Node(ele[0])
