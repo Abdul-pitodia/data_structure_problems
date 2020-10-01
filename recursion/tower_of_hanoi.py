@@ -1,6 +1,6 @@
 # Tower of hanoi
 
-```
+
 def solve(N,s,d,h):
   global cnt
   cnt += 1
@@ -19,4 +19,4 @@ def solve(N,s,d,h):
 N = int(input())
 s,h,d,cnt = 1,2,3,0
 print(solve(N,s,d,h))
-```
+
