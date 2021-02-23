@@ -1,6 +1,7 @@
 If the current element adds value to the previous sum, (meaning the addition of current element to the currentsum is greater than the element itself), then join along the subarray.
 Else, start your own sub array.
 
+```
 def maxSubArraySum(a,size):
     current_best = a[0]
     overall_best = a[0]
@@ -15,3 +16,4 @@ def maxSubArraySum(a,size):
         overall_best = max(overall_best, current_best)
     
     return overall_best
+```
