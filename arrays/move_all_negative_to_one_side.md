@@ -6,6 +6,8 @@ So, when these two are opposite, i.e. left pointer has a positive element, and r
 Else, increment them both (as there is no point to swap)
 Do untill j becomes less than i ( right pointer passes the left one )
 
+
+```
 arr = [-12, -11, -13, -5, -6, 5, -7, -3, -6]
 
 i = 0
@@ -30,3 +32,4 @@ while j >= i:
 
 
 print(arr)
+```
