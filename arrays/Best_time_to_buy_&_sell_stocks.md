@@ -6,7 +6,7 @@ The objective is to find the maximum profit that one can get buy buying at one d
 
 The approach to this would be to find a maximum difference subarray (max difference meaning buy at a day which has less price, and sell at a day that gives max returns)
 
-So basically there are two things to this
+So basically it can be solved like this
 1) First we need to find the best Buying day
 2) This can be done by iterating through the array and stopping at the first minimum element we get
 3) In this case, while iterating, we encounter 7 first, then 1 comes
