@@ -17,29 +17,30 @@ Firstly lets consider permutations of a simple example, 123
 321
 ```
 
-*What we do is, we keep the first digit intact (assuming it to be its own place), and then the rest digits are interchanged
-*Lexicographic means every digit will be in its ascending order
+1. What we do is, we keep the first digit intact (assuming it to be its own place), and then the rest digits are interchanged
+2. Lexicographic means every digit will be in its ascending order
 so we have 3 digits 1 , 2 and 3
 so first permutation will start from 1
 even in that permutation first permutation starts from 2
 then, once 12 is done, we only have another choice 3
 So we do 132
-*Now, permutations from 1 are done
+3. Now, permutations from 1 are done
 
-*We move to 2 and do the same steps
+4. We move to 2 and do the same steps
 
-*So, because of this we can see a pattern that when the number from behind is greater than its next immediate neighbour, that is the break point
-*before that break point, everything is assumed to be intact at its place, like its sorted in its lexicographic order
-*Whatever happens is after that break point, i.e. reshuffling or choosing a start number for next permutation
-*So for next permutation, before the break point everything is fixed, the next higher number greater than break point number will be at break points position now
-*So we find that next higher number.
-*Coming to the example, 1,3,5,4,2
+5. So, because of this we can see a pattern that when the number from behind is greater than its next immediate neighbour, that is the break point
+6. before that break point, everything is assumed to be intact at its place, like its sorted in its lexicographic order
+7. Whatever happens is after that break point, i.e. reshuffling or choosing a start number for next permutation
+8. So for next permutation, before the break point everything is fixed, the next higher number greater than break point number will be at break points position now
+9. So we find that next higher number.
+10. Coming to the example, 1,3,5,4,2
 Here break point is 3 ( as 3 < 5)
-*Now, for next permutation, we find just highest in 5,4,2 . We get  4 as answer
+11. Now, for next permutation, we find just highest in 5,4,2 . We get  4 as answer
 this will now be in place of 13 . i.e. it will be 14 and next digits will be shuffled.
-*These digits will be reversed. 
+12. These digits will be reversed. 
 
-*Code - 
+Code
+----
 
 ```
     def nextPermutation(self, nums: List[int]) -> None:
