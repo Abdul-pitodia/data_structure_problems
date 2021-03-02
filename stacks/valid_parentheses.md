@@ -6,24 +6,27 @@ https://leetcode.com/problems/valid-parentheses/
 Open brackets must be closed by the same type of brackets.
 Open brackets must be closed in the correct order.
  
-3. 
-Example 1:
+ 
+3. Example 1:
 
 Input: s = "()"
 Output: true
-Example 2:
+
+4. Example 2:
 
 Input: s = "()[]{}"
 Output: true
-Example 3:
+
+5. Example 3:
 
 Input: s = "(]"
 Output: false
-Example 4:
+
+6. Example 4:
 
 Input: s = "([)]"
 Output: false
-Example 5:
+7. Example 5:
 
 Input: s = "{[]}"
 Output: true
